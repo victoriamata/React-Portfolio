@@ -1,0 +1,17 @@
+.nav-tabs {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-tabs a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-tabs a:hover {
+  text-decoration: underline;
+}

@@ -1,14 +1,12 @@
 import React from 'react';
+import NavTabs from './NavTabs';
 
 const Header: React.FC = () => (
-  <header>
-    <h1>Victoria Mata</h1>
-    <nav>
-    <a href="#aboutme">About Me</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <a href="#resume">Resume</a>
-    </nav>
+  <header className="header">
+    <div className="header-left">
+      <h1>Victoria Mata</h1>
+    </div>
+    <NavTabs />
   </header>
 );
 
