@@ -1,17 +1,24 @@
+body {
+  background-color: #d8e2dc;
+}
+
 .nav-tabs {
   display: flex;
   gap: 1rem;
   padding: 1rem;
-  background-color: #333;
-  color: #fff;
+  background-color: #9d8189;
+  color: #ffe5d9;
+  align-items: center;
 }
 
 .nav-tabs a {
-  color: white;
+  color: #ffe5d9;
   text-decoration: none;
-  padding: 0.5rem;
+  margin-left: 70px;
+  
 }
 
 .nav-tabs a:hover {
   text-decoration: underline;
 }
+

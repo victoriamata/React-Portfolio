@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => (
   <section>
-    <h2>About Me</h2>
+    <h2>Hello, I'm Victoria Mata.</h2>
     <p>This is the About page content.</p>
   </section>
 );
