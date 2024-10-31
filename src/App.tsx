@@ -10,14 +10,18 @@ import FooterTabs from './components/Footer';
 const App: React.FC = () => {
   return (
     <Router>
+      <div className="page-container">
       <Header/>
+      <div className="content-wrap">
       <Routes>
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/resume" element={<Resume />} />
       </Routes>
+      </div>
       <FooterTabs/>
+      </div>
     </Router>
   );
 };

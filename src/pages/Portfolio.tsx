@@ -7,7 +7,7 @@ const Projects: React.FC = () => (
     <ProjectCard
       title="Build Your Vehicle"
       description="This project is a typescript command line application that builds three different types of vehicles, or allows the user to select an existing vehicle."
-      imageUrl="/path/to/image1.jpg"
+      imageUrl=""
       link="https://github.com/victoriamata/Build-Your-Vehicle"
     />
     <ProjectCard
