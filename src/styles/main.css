@@ -10,6 +10,8 @@ header {
   background-color: #124559;
   color: #eff6e0;
   width: 100%;
+  margin-top: -10px;
+  margin-left:-10px;
 }
 
 .header-left h1 {
@@ -31,7 +33,7 @@ header {
 }
 
 .nav-tabs a:hover {
-  text-decoration: underline;
+  color:rgb(32, 32, 32);
 }
 
 .footer {
@@ -39,17 +41,19 @@ header {
   gap: 1rem;
   justify-content: center;
   padding: 1rem;
-  background-color: #4e8098;
+  background-color: #124559;
   color: #ffe5d9;
   align-items: center;
   margin: 0;
   width: 100%;
+  margin-left: -10px;
+  margin-bottom: -10px;
 }
 .footer-icon {
-  color:rgb(32, 32, 32) ;
+  color:#eff6e0;
 }
 .footer-icon:hover {
-  color:#eff6e0;
+  color:rgb(32, 32, 32);
 }
 
 .page-container {
@@ -133,4 +137,58 @@ border-color: #124559;
 
 .icon-link:hover {
   color: #555; /* Hover color for icon */
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  /*padding: 80px;*/
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #124559;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  box-shadow: #555;
+}
+
+.contact-form p {
+  color: #124559;
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  font-size: larger;
+  font-family: Georgia;
+}
+
+.resume-section {
+  max-width: 700px;
+  border-style: dotted;
+  margin: auto;
+  padding: 20px;
+}
+.skills-list {
+  list-style-type: none;
+ 
 }
