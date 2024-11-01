@@ -1,5 +1,5 @@
 body {
-  background-color: #d8e2dc;
+  background-color: #aec3b0;
 }
 
 header {
@@ -7,15 +7,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #9d8189;
-  color: #ffe5d9;
+  background-color: #124559;
+  color: #eff6e0;
   width: 100%;
 }
 
 .header-left h1 {
   margin: 0;
   font-size: 1.5rem;
-  color: #ffe5d9;
+  color: #eff6e0;
 }
 
 .nav-tabs {
@@ -25,7 +25,7 @@ header {
 }
 
 .nav-tabs a {
-  color: #ffe5d9;
+  color: #eff6e0;
   text-decoration: none;
   padding: 0.5rem;
 }
@@ -39,7 +39,7 @@ header {
   gap: 1rem;
   justify-content: center;
   padding: 1rem;
-  background-color: #9d8189;
+  background-color: #4e8098;
   color: #ffe5d9;
   align-items: center;
   margin: 0;
@@ -62,6 +62,9 @@ width:200px;
 height: auto;
 margin: 0;
 margin-bottom: 1rem;
+border-style: solid;
+border-width: 10px;
+border-color: #124559;
 }
 
 
@@ -69,6 +72,7 @@ margin-bottom: 1rem;
   max-width: 700px;
   line-height: 1.6; /* Space between lines for readability */
   margin: 0;
+  padding: 20px;
 }
 
 .aboutme-content {
@@ -78,6 +82,32 @@ margin-bottom: 1rem;
   text-align: center;
   padding: 0;
   margin: 0px;
+  color: #01161e;
   box-sizing: border-box;
   flex-direction: column; /* Stack image and text in a column */
+}
+
+.card-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 1.5rem; /* Space between cards */
+}
+.project-card {
+  background-color: #01161e;
+  margin: 20px;
+  color:#eff6e0;
+  max-width: 700px;
+  padding: 10px;
+}
+.project-image {
+  width: 300px;
+  height: auto;
+  border-width: 10px;
+}
+
+.project-image:hover {
+  border-width: 10px;
+  border-style: solid;
+  border-color:#eff6e0;
 }

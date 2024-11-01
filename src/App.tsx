@@ -14,6 +14,7 @@ const App: React.FC = () => {
       <Header/>
       <div className="content-wrap">
       <Routes>
+      <Route path="/" element={<About />} />
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />

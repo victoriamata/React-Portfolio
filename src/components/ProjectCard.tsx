@@ -7,11 +7,13 @@ interface ProjectCardProps {
   link: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl, link }) => (
   <div className="project-card">
     <h3>{title}</h3>
     <p>{description}</p>
-    <a href={link} target="_blank"><img src={imageUrl}/></a>
+    <div className = "project-links">
+    <a href={link} target="_blank"><img src={imageUrl} className="project-image"/></a>
+    </div>
   </div>
 );
 
