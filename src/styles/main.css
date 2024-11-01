@@ -45,6 +45,13 @@ header {
   margin: 0;
   width: 100%;
 }
+.footer-icon {
+  color:rgb(32, 32, 32) ;
+}
+.footer-icon:hover {
+  color:#eff6e0;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -100,14 +107,30 @@ border-color: #124559;
   max-width: 700px;
   padding: 10px;
 }
-.project-image {
-  width: 300px;
-  height: auto;
-  border-width: 10px;
-}
 
 .project-image:hover {
-  border-width: 10px;
-  border-style: solid;
-  border-color:#eff6e0;
+  box-shadow:#eff6e0;
+}
+.project-image {
+  width: 300px; 
+  height: auto;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Space between image and icon */
+  margin-top: 1rem;
+}
+
+.icon-link {
+  color: #eff6e0; /* Set icon color */
+
+}
+
+.icon-link:hover {
+  color: #555; /* Hover color for icon */
 }
