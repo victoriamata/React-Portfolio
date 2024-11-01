@@ -3,7 +3,7 @@ import { MdOutlineWavingHand } from "react-icons/md";
 
 const About: React.FC = () => (
   <section className="aboutme-content">
-    <img className="portfolioimg" src="./src/assets/portfolioimg.png" />
+    <img className="portfolioimg" src="./public/assets/portfolioimg.png" />
     <h2>
       Hello, I'm Victoria Mata{" "}
       <MdOutlineWavingHand style={{ fontSize: "39px" }} />{" "}
