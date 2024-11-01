@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { MdContactPage } from "react-icons/md";
 
 const Contact: React.FC = () => {
   // State variables for each input field
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [formStatus, setFormStatus] = useState(''); // Status message
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [formStatus, setFormStatus] = useState(""); // Status message
 
   // Handler function for form submission
   const handleSubmit = (event: React.FormEvent) => {
@@ -13,13 +14,13 @@ const Contact: React.FC = () => {
 
     // Check if all fields are filled out
     if (!name || !email || !message) {
-      setFormStatus('Please complete form.');
+      setFormStatus("Please complete form.");
     } else {
-      setFormStatus('Submitted contact form.');
+      setFormStatus("Submitted contact form.");
       // Clear the form fields after submission
-      setName('');
-      setEmail('');
-      setMessage('');
+      setName("");
+      setEmail("");
+      setMessage("");
     }
   };
 
@@ -66,4 +67,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-

@@ -11,7 +11,7 @@ header {
   color: #eff6e0;
   width: 100%;
   margin-top: -10px;
-  margin-left:-10px;
+  margin-left: -10px;
   font-family: "Roboto Slab", serif;
 }
 
@@ -34,7 +34,12 @@ header {
 }
 
 .nav-tabs a:hover {
-  color:rgb(32, 32, 32);
+  color: rgb(32, 32, 32);
+}
+
+.active {
+  font-weight: bolder;
+  border-bottom: 2px solid white;
 }
 
 .footer {
@@ -51,10 +56,10 @@ header {
   margin-bottom: -10px;
 }
 .footer-icon {
-  color:#eff6e0;
+  color: #eff6e0;
 }
 .footer-icon:hover {
-  color:rgb(32, 32, 32);
+  color: rgb(32, 32, 32);
 }
 
 .page-container {
@@ -69,16 +74,15 @@ header {
 }
 
 .portfolioimg {
-border-radius: 50%;
-width:200px;
-height: auto;
-margin: 0;
-margin-bottom: 1rem;
-border-style: solid;
-border-width: 10px;
-border-color: #124559;
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #124559;
 }
-
 
 .aboutme-p {
   max-width: 700px;
@@ -109,7 +113,7 @@ border-color: #124559;
 .project-card {
   background-color: #01161e;
   margin: 20px;
-  color:#eff6e0;
+  color: #eff6e0;
   max-width: 700px;
   padding: 10px;
   font-family: "Roboto Slab", serif;
@@ -121,10 +125,10 @@ border-color: #124559;
 }
 
 .project-image:hover {
-  box-shadow:#eff6e0;
+  box-shadow: #eff6e0;
 }
 .project-image {
-  width: 300px; 
+  width: 300px;
   height: auto;
   border-radius: 8px;
   margin-right: 0.5rem;
@@ -140,7 +144,6 @@ border-color: #124559;
 
 .icon-link {
   color: #eff6e0; /* Set icon color */
-
 }
 
 .icon-link:hover {
@@ -195,7 +198,6 @@ border-color: #124559;
 .resume-section-container {
   max-width: 700px;
   margin: auto;
-
 }
 
 .resume-text-box {
@@ -210,7 +212,7 @@ border-color: #124559;
 }
 .resume-text-box a {
   text-decoration: none;
-color:#01161e;
+  color: #01161e;
 }
 
 .skills-list {
@@ -220,5 +222,3 @@ color:#01161e;
   font-size: 3rem;
   margin-top: 50px;
 }
-
-

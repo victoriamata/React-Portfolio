@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => (
   <header className="header">
@@ -7,10 +7,30 @@ const Header: React.FC = () => (
       <h1>Victoria Mata</h1>
     </div>
     <nav className="nav-tabs">
-      <Link to="/about">About Me</Link>
-      <Link to="/projects">Portfolio</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/resume">Resume</Link>
+      <NavLink
+        to="/about"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        About Me
+      </NavLink>
+      <NavLink
+        to="/projects"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        Portfolio
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        Contact
+      </NavLink>
+      <NavLink
+        to="/resume"
+        className={({ isActive }) => (isActive ? "active" : "nav-link")}
+      >
+        Resume
+      </NavLink>
     </nav>
   </header>
 );
