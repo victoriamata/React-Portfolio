@@ -7,10 +7,8 @@ import { SiPostgresql, SiTypescript } from "react-icons/si";
 
 const Resume: React.FC = () => (
   <section>
-    <div className="resume-section">
-    <h2>Resume</h2>
-    <h3>Skills:</h3>
-    <ul className="skills-list">
+    <div className="resume-section-container">
+    <div className="skills-list">
     <FaGitAlt />
     <FaGithubAlt />
     <PiFileHtml />
@@ -20,7 +18,14 @@ const Resume: React.FC = () => (
       <SiTypescript />
       <IoLogoReact />
       <SiPostgresql />
-</ul>
+</div>
+<div className="resume-text-box">
+  <h2>
+    <a href="./src/assets/resume.pdf" download>
+      Click here to download my resume
+    </a>
+  </h2>
+</div>
 </div>
   </section>
 );

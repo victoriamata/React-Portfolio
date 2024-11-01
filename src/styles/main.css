@@ -182,13 +182,32 @@ border-color: #124559;
   font-family: Georgia;
 }
 
-.resume-section {
+.resume-section-container {
   max-width: 700px;
-  border-style: dotted;
   margin: auto;
-  padding: 20px;
+
 }
+
+.resume-text-box {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 10px;
+  border-style: solid;
+  background-color: #eff6e0;
+}
+.resume-text-box a {
+  text-decoration: none;
+color:#01161e;
+}
+
 .skills-list {
-  list-style-type: none;
- 
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+  font-size: 3rem;
+  margin-top: 50px;
 }
+
+
