@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 
 const Projects: React.FC = () => (
   <section>
-    <h2>Projects</h2>
+    <h2 className="project-heading" >Projects</h2>
     <div className ="card-container">
     <div className='project-card'>
     <ProjectCard

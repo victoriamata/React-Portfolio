@@ -12,6 +12,7 @@ header {
   width: 100%;
   margin-top: -10px;
   margin-left:-10px;
+  font-family: "Roboto Slab", serif;
 }
 
 .header-left h1 {
@@ -96,6 +97,7 @@ border-color: #124559;
   color: #01161e;
   box-sizing: border-box;
   flex-direction: column; /* Stack image and text in a column */
+  font-family: "Roboto Slab", serif;
 }
 
 .card-container {
@@ -110,6 +112,12 @@ border-color: #124559;
   color:#eff6e0;
   max-width: 700px;
   padding: 10px;
+  font-family: "Roboto Slab", serif;
+}
+.project-heading {
+  font-family: "Roboto Slab", serif;
+  width: 100px;
+  margin: auto;
 }
 
 .project-image:hover {
@@ -143,6 +151,7 @@ border-color: #124559;
   max-width: 500px;
   margin: auto;
   /*padding: 80px;*/
+  font-family: "Roboto Slab", serif;
 }
 
 .contact-form form {
@@ -157,15 +166,17 @@ border-color: #124559;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-family: "Roboto Slab", serif;
 }
 
 .contact-form button {
   padding: 10px;
   background-color: #124559;
-  color: white;
+  color: #eff6e0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "Roboto Slab", serif;
 }
 
 .contact-form button:hover {
@@ -179,7 +190,6 @@ border-color: #124559;
 
 .contact-form label {
   font-size: larger;
-  font-family: Georgia;
 }
 
 .resume-section-container {
@@ -196,6 +206,7 @@ border-color: #124559;
   border-radius: 10px;
   border-style: solid;
   background-color: #eff6e0;
+  font-family: "Roboto Slab", serif;
 }
 .resume-text-box a {
   text-decoration: none;
