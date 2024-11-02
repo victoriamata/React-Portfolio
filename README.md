@@ -13,8 +13,9 @@
    ## Usage:
    Viewing the header, you can navigate between the tabs labeled " About Me, Portfolio, Contact, and Resume". The About Me page is what appears when the app starts running, or if the link is clicked on. On the Portfolio page, you will see project card componenets that showcase previous projects with two links- one to the deployed site, and another link to the Github repository. On the contact page, you can submit a form if you input your name, email, and a message, otherwise a box appears asking to please fill out the form. On the Resume page, I included icons that are related to the skills I have learned. There is also a box containing a downloadable resume when clicked. Finally, the footer contains icons that will redirect the user to my LinkedIn, Github, and Twitter(X) accounts.
 
-   Here is the link to the deployed application:
 
+   Here is the link to the deployed application:
+https://victoriamata.netlify.app/
    
    ![](./src/assets/screenshot.png)
 
