@@ -8,7 +8,7 @@ const Projects: React.FC = () => (
       <div className="project-card">
         <ProjectCard
           title="CoolShirts Store"
-          description="I collaborated with a group to create this website using HTML, CSS, and JavaScript. "
+          description="I collaborated with a group to create this website using HTML, CSS, and JavaScript. This was our first project. "
           imageUrl="./assets/coolshirts.png"
           projectLink="https://chandlerrobinson.github.io/Project-1/"
           repoLink="https://github.com/ChandlerRobinson/Project-1"
@@ -16,20 +16,20 @@ const Projects: React.FC = () => (
       </div>
       <div className="project-card">
         <ProjectCard
-          title="Daily Weather"
-          description="Using server API's, this application allows a traveling user to view a 5 day forecast at any location, so that they can plan a trip and activities accordingly."
+          title="Focus Flow"
+          description="This deployed website is a full stack MERN application that uses JWT authentication for a login. "
           imageUrl="./assets/dailyweather.png"
           projectLink="https://google.com/project"
-          repoLink="https://github.com/victoriamata/Daily-Weather"
+          repoLink="https://github.com/jacobmidd1996/FocusFlow"
         />
       </div>
       <div className="project-card">
         <ProjectCard
           title="Nessa's Kitchen"
-          description="This application will be coming soon, and created with React Typescript. This app will allow users to book a catering service and view a menu. "
+          description="This was built for my mother's new catering service. It features links to social media, a menu, and a contact form that works. It was made using React.js "
           imageUrl="./assets/coming-soon.png"
           projectLink="https://example.com/project"
-          repoLink="https://github.com/victoriamata/readme-generator"
+          repoLink="https://github.com/victoriamata/NessasKitchen"
         />
       </div>
       <div className="project-card">
