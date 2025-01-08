@@ -27,4 +27,17 @@ const App: React.FC = () => {
   );
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Create the custom cursor element
+  const cursor = document.createElement("div");
+  cursor.classList.add("custom-cursor");
+  document.body.appendChild(cursor);
+
+  // Update the position of the cursor
+  document.addEventListener("mousemove", (event) => {
+    cursor.style.left = `${event.pageX}px`;
+    cursor.style.top = `${event.pageY}px`;
+  });
+});
+
 export default App;

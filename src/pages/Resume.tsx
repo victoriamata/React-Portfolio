@@ -21,8 +21,8 @@ const Resume: React.FC = () => (
       </div>
       <div className="resume-text-box">
         <h2>
-          <a href="./src/assets/resume.pdf" download>
-            Click here to download my resume
+          <a href="./public/assets/victoriamataresume.pdf" download>
+            Click here to download my resume!
           </a>
         </h2>
       </div>

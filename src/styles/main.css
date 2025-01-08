@@ -1,5 +1,22 @@
-body {
-  background-color: #aec3b0;
+body, html {
+  background-color: #121212;
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 30px; 
+  height: 30px;
+  border: 2px solid pink; 
+  border-radius: 50%; 
+  background-color: transparent;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%); 
 }
 
 header {
@@ -7,7 +24,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #124559;
+  background: rgb(56,0,125);
+background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   color: #eff6e0;
   width: 100%;
   margin-top: -10px;
@@ -47,7 +65,7 @@ header {
   gap: 1rem;
   justify-content: center;
   padding: 1rem;
-  background-color: #124559;
+  background-color: #222;
   color: #ffe5d9;
   align-items: center;
   margin: 0;
@@ -56,7 +74,7 @@ header {
   margin-bottom: -10px;
 }
 .footer-icon {
-  color: #eff6e0;
+  color: #ffe5d9;
 }
 .footer-icon:hover {
   color: rgb(32, 32, 32);
@@ -75,18 +93,18 @@ header {
 
 .portfolioimg {
   border-radius: 50%;
-  width: 200px;
+  width: 300px;
   height: auto;
   margin: 0;
   margin-bottom: 1rem;
   border-style: solid;
-  border-width: 10px;
-  border-color: #124559;
+  border-width: 4px;
+  border-color: #1a0182;
 }
 
 .aboutme-p {
   max-width: 700px;
-  line-height: 1.6; /* Space between lines for readability */
+  line-height: 1.6; 
   margin: 0;
   padding: 20px;
 }
@@ -98,22 +116,24 @@ header {
   text-align: center;
   padding: 0;
   margin: 0px;
-  color: #01161e;
+  color: #fff4e5;
   box-sizing: border-box;
-  flex-direction: column; /* Stack image and text in a column */
-  font-family: "Roboto Slab", serif;
+  flex-direction: column; 
+  font-family: "Roboto Slab", serif; 
+  /* font-family: "Parkinsans", serif; */
 }
 
 .card-container {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-  gap: 1.5rem; /* Space between cards */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem; 
 }
 .project-card {
-  background-color: #01161e;
+  background-color: #1a0182;
+  border-radius: 20px;
   margin: 20px;
-  color: #eff6e0;
+  color: #fff4e5;
   max-width: 700px;
   padding: 10px;
   font-family: "Roboto Slab", serif;
@@ -121,6 +141,7 @@ header {
 .project-heading {
   font-family: "Roboto Slab", serif;
   width: 100px;
+  color: #fff4e5;
   margin: auto;
 }
 
@@ -138,22 +159,23 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; /* Space between image and icon */
+  gap: 1rem; 
   margin-top: 1rem;
 }
 
 .icon-link {
-  color: #eff6e0; /* Set icon color */
+  color: #eff6e0; 
 }
 
 .icon-link:hover {
-  color: #555; /* Hover color for icon */
+  color: #555; 
 }
 
 .contact-form {
   max-width: 500px;
   margin: auto;
-  /*padding: 80px;*/
+  color: #fff4e5;
+  padding: 80px;
   font-family: "Roboto Slab", serif;
 }
 
@@ -174,11 +196,12 @@ header {
 
 .contact-form button {
   padding: 10px;
-  background-color: #124559;
+  background-color: rgba(56,0,125,1);
   color: #eff6e0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size:larger;
   font-family: "Roboto Slab", serif;
 }
 
@@ -196,7 +219,7 @@ header {
 }
 
 .resume-section-container {
-  max-width: 700px;
+  max-width: 600px;
   margin: auto;
 }
 
@@ -207,7 +230,7 @@ header {
   margin-top: 100px;
   border-radius: 10px;
   border-style: solid;
-  background-color: #eff6e0;
+  background-color: #ffe5d9;
   font-family: "Roboto Slab", serif;
 }
 .resume-text-box a {
@@ -218,7 +241,23 @@ header {
 .skills-list {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Space between icons */
+  gap: 15px; 
   font-size: 3rem;
   margin-top: 50px;
+  color: #ffe5d9;
+}
+
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
 }
