@@ -11,22 +11,22 @@ const FooterTabs: React.FC = () => {
         target="_blank"
         className="footer-icon"
       >
-        <FaLinkedin size={24} />
+        <FaLinkedin size={30} />
       </a>
       <a
         href="https://www.github.com/victoriamata"
         target="_blank"
         className="footer-icon"
       >
-        <FaGithub size={24} />
+        <FaGithub size={30} />
       </a>
       <a
           href="mailto:victoriamataxo@gmail.com"
           target="_blank"
-          className="social-icon"
           rel="noopener noreferrer"
+          className="footer-icon"
         >
-          <MdOutlineMailOutline size={30} color={"#ffe5d9"}/>
+          <MdOutlineMailOutline size={30}/>
         </a>
     </nav>
   );

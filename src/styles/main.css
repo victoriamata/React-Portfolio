@@ -62,7 +62,7 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   color: #ffe5d9;
 }
 .footer-icon:hover {
-  color: rgb(32, 32, 32);
+  color: gray;
 }
 
 .page-container {
@@ -133,7 +133,11 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
 
 .project-heading {
   color: #fff4e5;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center; 
+  font-family: "Roboto Slab", serif;
 }
 
 .project-card {
@@ -218,8 +222,9 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
 }
 
 .contact-form p {
-  color: #124559;
+  color: #ffe5d9;
   margin-top: 1rem;
+  font-family: "Roboto Slab", serif;
 }
 
 .contact-form label {
@@ -255,7 +260,7 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   color: #ffe5d9;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav-tabs {
     flex-direction: column;
     gap: 0.5rem;
@@ -264,4 +269,4 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   .skills-list {
     flex-direction: column;
   }
-}
+} */

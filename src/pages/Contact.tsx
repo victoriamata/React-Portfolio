@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com"; // Import emailjs
 
 const Contact: React.FC = () => {
@@ -13,6 +13,9 @@ const Contact: React.FC = () => {
   const templateID = "template_lxibl8r";
   const userID = "1UPD38bpv3rTeuMYX";
 
+  // Create a reference for the form
+  const form = useRef<HTMLFormElement>(null);
+
   // Handler function for form submission
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -22,18 +25,20 @@ const Contact: React.FC = () => {
       setFormStatus("Please complete the form.");
     } else {
       // Send the email using EmailJS
-      emailjs
-        .sendForm(serviceID, templateID, userID)
-        .then(
-          (result) => {
-            setFormStatus("Form submitted successfully!");
-            console.log(result.text);
-          },
-          (error) => {
-            setFormStatus("Something went wrong, please try again.");
-            console.log(error.text);
-          }
-        );
+      if (form.current) {
+        emailjs
+          .sendForm(serviceID, templateID, form.current, userID)
+          .then(
+            (result) => {
+              setFormStatus("Thank you for submitting this form!");
+              console.log(result.text);
+            },
+            (error) => {
+              setFormStatus("Something went wrong, please try again.");
+              console.log(error.text);
+            }
+          );
+      }
 
       // Clear the form fields after submission
       setName("");
@@ -45,7 +50,7 @@ const Contact: React.FC = () => {
   return (
     <section className="contact-form">
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
