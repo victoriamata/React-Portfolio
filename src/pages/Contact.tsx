@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MdContactPage } from "react-icons/md";
+import emailjs from "emailjs-com"; // Import emailjs
 
 const Contact: React.FC = () => {
   // State variables for each input field
@@ -8,15 +8,33 @@ const Contact: React.FC = () => {
   const [message, setMessage] = useState("");
   const [formStatus, setFormStatus] = useState(""); // Status message
 
+  // EmailJS service setup
+  const serviceID = "service_29lwgj8";
+  const templateID = "template_lxibl8r";
+  const userID = "1UPD38bpv3rTeuMYX";
+
   // Handler function for form submission
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
     // Check if all fields are filled out
     if (!name || !email || !message) {
-      setFormStatus("Please complete form.");
+      setFormStatus("Please complete the form.");
     } else {
-      setFormStatus("Submitted contact form.");
+      // Send the email using EmailJS
+      emailjs
+        .sendForm(serviceID, templateID, userID)
+        .then(
+          (result) => {
+            setFormStatus("Form submitted successfully!");
+            console.log(result.text);
+          },
+          (error) => {
+            setFormStatus("Something went wrong, please try again.");
+            console.log(error.text);
+          }
+        );
+
       // Clear the form fields after submission
       setName("");
       setEmail("");
@@ -33,6 +51,7 @@ const Contact: React.FC = () => {
           <input
             type="text"
             id="name"
+            name="name" // Add name attribute to match the template
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
@@ -43,6 +62,7 @@ const Contact: React.FC = () => {
           <input
             type="email"
             id="email"
+            name="email" // Add name attribute to match the template
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -52,6 +72,7 @@ const Contact: React.FC = () => {
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
+            name="message" // Add name attribute to match the template
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required

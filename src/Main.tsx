@@ -12,5 +12,4 @@ root.render(
   </React.StrictMode>
 );
 
-
 //Used Module 12 activities boilerplate for Main.tsx from coding bootcamp.

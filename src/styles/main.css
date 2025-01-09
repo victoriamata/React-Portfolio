@@ -1,22 +1,7 @@
 body, html {
-  background-color: #121212;
-  cursor: none;
   margin: 0;
   padding: 0;
   background-color: #121212;
-  cursor: none;
-}
-
-.custom-cursor {
-  position: fixed;
-  width: 30px; 
-  height: 30px;
-  border: 2px solid pink; 
-  border-radius: 50%; 
-  background-color: transparent;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%); 
 }
 
 header {
@@ -123,12 +108,34 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   /* font-family: "Parkinsans", serif; */
 }
 
+.view-more-btn {
+  padding: 10px;
+  background-color: rgba(56,0,125,1);
+  color: #eff6e0;
+  border: none;
+  border-radius: 4px;
+  font-size:larger;
+  font-family: "Roboto Slab", serif;
+}
+
+.view-more-btn:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
 .card-container {
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem; 
 }
+
+.project-heading {
+  color: #fff4e5;
+  justify-content: center;
+}
+
 .project-card {
   background-color: #1a0182;
   border-radius: 20px;
@@ -137,22 +144,23 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   max-width: 700px;
   padding: 10px;
   font-family: "Roboto Slab", serif;
-}
-.project-heading {
-  font-family: "Roboto Slab", serif;
-  width: 100px;
-  color: #fff4e5;
-  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
-.project-image:hover {
-  box-shadow: #eff6e0;
+.project-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+
 .project-image {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   margin-right: 0.5rem;
+  transition: transform 0.3s ease;
 }
 
 .links {
@@ -200,13 +208,13 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   color: #eff6e0;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
   font-size:larger;
   font-family: "Roboto Slab", serif;
 }
 
 .contact-form button:hover {
-  box-shadow: #555;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .contact-form p {
@@ -251,10 +259,6 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   .nav-tabs {
     flex-direction: column;
     gap: 0.5rem;
-  }
-
-  .card-container {
-    grid-template-columns: 1fr;
   }
 
   .skills-list {
