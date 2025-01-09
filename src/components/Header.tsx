@@ -28,9 +28,6 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="header-left">
-        <h1>Victoria Mata</h1>
-      </div>
       <nav className="nav-tabs">
         <a href="#about" className="nav-link">About Me</a>
         <a href="#projects" className="nav-link">Portfolio</a>

@@ -2,20 +2,21 @@ body, html {
   margin: 0;
   padding: 0;
   background-color: #121212;
-  height: 100%; /* Ensures the full height is utilized */
+  height: 100%; 
+  box-sizing: border-box; 
+  overflow-x: hidden; 
+  width: 100%;
 }
 
-/* Default state for sections (start hidden and off-screen) */
 section {
   opacity: 0;
-  transform: translateY(50px); /* Example: start from below */
-  transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+  transform: translateY(50px); 
+  transition: opacity 0.6s ease, transform 0.6s ease; 
 }
 
-/* When section is in view and animated */
 .section-in-view {
   opacity: 1;
-  transform: translateY(0); /* Move to the original position */
+  transform: translateY(0); 
 }
 
 header {
@@ -34,16 +35,10 @@ header {
   z-index: 1000; 
 }
 
-.header-left h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #eff6e0;
-}
-
 .nav-tabs {
   display: flex;
   gap: 1rem;
-  margin-right: 30px;
+  margin: auto;
 }
 
 .nav-tabs a {
@@ -84,10 +79,9 @@ header {
   color: gray;
 }
 
-/* Add padding to the content area to avoid overlap with fixed header/footer */
 .content-wrap {
-  margin-top: 6rem; /* Adjust to header height */
-  margin-bottom: 4rem; /* Adjust to footer height */
+  margin-top: 6rem;
+  margin-bottom: 4rem; 
   padding: 1rem;
 }
 
@@ -139,21 +133,11 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-
 .card-container {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem; 
-}
-
-.project-heading {
-  color: #fff4e5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; 
-  font-family: "Roboto Slab", serif;
 }
 
 .project-card {
@@ -176,27 +160,46 @@ header {
 
 .project-image {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   border-radius: 8px;
-  margin-right: 0.5rem;
   transition: transform 0.3s ease;
+}
+
+.project-heading {
+  color: #fff4e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
 }
 
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
   margin-top: 1rem;
 }
 
 .icon-link {
-  color: #eff6e0; 
+  color: #eff6e0;
 }
 
 .icon-link:hover {
-  color: #555; 
+  color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    max-width: 100%; 
+    margin: 0 auto; 
+  }
 }
 
 .contact-form {
@@ -250,7 +253,8 @@ header {
 .resume-section-container {
   max-width: 600px;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
+  margin-top: 140px;
 }
 
 .resume-text-box {
@@ -276,14 +280,3 @@ header {
   margin-top: 50px;
   color: #ffe5d9;
 }
-
-/* @media (max-width: 768px) {
-  .nav-tabs {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .skills-list {
-    flex-direction: column;
-  }
-} */
