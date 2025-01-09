@@ -2,20 +2,36 @@ body, html {
   margin: 0;
   padding: 0;
   background-color: #121212;
+  height: 100%; /* Ensures the full height is utilized */
+}
+
+/* Default state for sections (start hidden and off-screen) */
+section {
+  opacity: 0;
+  transform: translateY(50px); /* Example: start from below */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+}
+
+/* When section is in view and animated */
+.section-in-view {
+  opacity: 1;
+  transform: translateY(0); /* Move to the original position */
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: rgb(56,0,125);
-background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
+  background: rgb(56, 0, 125);
+  background: linear-gradient(0deg, rgba(56, 0, 125, 1) 0%, rgba(253, 45, 106, 1) 93%);
   color: #eff6e0;
-  width: 100%;
-  margin-top: -10px;
-  margin-left: -10px;
   font-family: "Roboto Slab", serif;
+  z-index: 1000; 
 }
 
 .header-left h1 {
@@ -36,16 +52,20 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   padding: 0.5rem;
 }
 
+.nav-tabs .active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
 .nav-tabs a:hover {
   color: rgb(32, 32, 32);
 }
 
-.active {
-  font-weight: bolder;
-  border-bottom: 2px solid white;
-}
-
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -53,30 +73,26 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
   background-color: #222;
   color: #ffe5d9;
   align-items: center;
-  margin: 0;
-  width: 100%;
-  margin-left: -10px;
-  margin-bottom: -10px;
+  z-index: 1000; 
 }
+
 .footer-icon {
   color: #ffe5d9;
 }
+
 .footer-icon:hover {
   color: gray;
 }
 
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
+/* Add padding to the content area to avoid overlap with fixed header/footer */
 .content-wrap {
-  flex: 1;
-  padding: 2rem;
+  margin-top: 6rem; /* Adjust to header height */
+  margin-bottom: 4rem; /* Adjust to footer height */
+  padding: 1rem;
 }
 
 .portfolioimg {
+  margin-top: 80px;
   border-radius: 50%;
   width: 300px;
   height: auto;
@@ -234,6 +250,7 @@ background: linear-gradient(0deg, rgba(56,0,125,1) 0%, rgba(253,45,106,1) 93%);
 .resume-section-container {
   max-width: 600px;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 .resume-text-box {
