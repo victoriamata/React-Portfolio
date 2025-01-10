@@ -15,7 +15,7 @@ const About: React.FC = () => {
         Hello, I'm Victoria Mata{" "}
         <MdOutlineWavingHand style={{ fontSize: "39px" }} />{" "}
       </h2>
-      <h3> Software Engineer | Data Analyst </h3>
+      <h3> Software Developer | Data Analyst </h3>
       <p className="aboutme-p">
         I was born and raised in South Florida before moving to Knoxville,
         Tennessee, with my family at the age of 16. After five years in
