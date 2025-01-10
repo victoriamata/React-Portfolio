@@ -11,20 +11,17 @@ const App: React.FC = () => {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
-    // Create an IntersectionObserver instance
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Add the class that triggers the animation when the section is in view
             entry.target.classList.add("section-in-view");
           } else {
-            // Remove the animation class when the section is out of view
             entry.target.classList.remove("section-in-view");
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is in view
+      { threshold: 0.1 } // Trigger earlier in the scroll
     );
 
     sections.forEach((section) => observer.observe(section));

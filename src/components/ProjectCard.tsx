@@ -20,17 +20,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <h3>{title}</h3>
     <p>{description}</p>
     <div className="links">
-      {/* Link to project (image) */}
       <a href={projectLink} target="_blank">
         <img src={imageUrl} alt={title} className="project-image" />
       </a>
-
-      {/* Link to repository (icon) */}
       <a href={repoLink} target="_blank" className="icon-link">
-        <FaGithub size={24} />
+        <FaGithub size={36} />
       </a>
     </div>
   </div>
 );
 
 export default ProjectCard;
+
